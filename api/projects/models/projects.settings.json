@@ -11,12 +11,34 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "projectName": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "image": {
+    "backgroundColor": {
+      "type": "string",
+      "required": true
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "before": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "after": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
