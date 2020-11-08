@@ -13,7 +13,6 @@ if (process.env.DATABASE_URL) {
   settings.database = parsed.pathname.substr(1);
   settings.username = username;
   settings.password = password;
-  settings.ssl = true;
 }
 
 module.exports = {
