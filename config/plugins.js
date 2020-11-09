@@ -1,5 +1,5 @@
 module.exports = ({ env }) => {
-    console.log(env('CLOUDINARY_KEY'));
+    console.log(process.env);
     return {
         // ...
         email: {
