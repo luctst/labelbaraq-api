@@ -29,6 +29,15 @@
       "plugin": "upload",
       "required": true
     },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
     "before": {
       "model": "file",
       "via": "related",
